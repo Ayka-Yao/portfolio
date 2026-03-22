@@ -1,0 +1,43 @@
+import { useEffect, useState } from 'react'
+
+// Same concept as Loader but accepts a text prop
+// so it can show "Projects", "About", "Contact" etc
+interface PageLoaderProps {
+  text: string
+  onComplete: () => void
+}
+
+const PageLoader = ({ text, onComplete }: PageLoaderProps) => {
+  const [fading, setFading] = useState(false)
+
+  useEffect(() => {
+    const fadeTimer = setTimeout(() => {
+      setFading(true)
+    }, 800) // shorter than initial loader
+
+    const removeTimer = setTimeout(() => {
+      onComplete()
+    }, 1400)
+
+    return () => {
+      clearTimeout(fadeTimer)
+      clearTimeout(removeTimer)
+    }
+  }, [])
+
+  return (
+    <div
+      className='fixed inset-0 z-50 flex items-center justify-center bg-black'
+      style={{
+        opacity: fading ? 0 : 1,
+        transition: 'opacity 0.6s ease',
+      }}
+    >
+      <p className='text-white text-3xl tracking-widest font-cinzel'>
+        {text}
+      </p>
+    </div>
+  )
+}
+
+export default PageLoader
