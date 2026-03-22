@@ -4,7 +4,7 @@ const Home = () => {
     return(
          <header className="relative z-10 flex h-screen items-center overflow-hidden">
 
-      {/* ghost text */}
+
       <p
         className="absolute font-black text-[180px] text-transparent left-15 top-18 select-none pointer-events-none tracking-widest"
         style={{ WebkitTextStroke: '1px #222' }}
@@ -15,7 +15,7 @@ const Home = () => {
  
       <div className="relative w-full px-20">
 
-        {/* small top text */}
+
         <p className="text-md tracking-[0.25em] text-white/65 mb-6">
           HI, I'M JERIC GONZALES
         </p>
@@ -23,7 +23,7 @@ const Home = () => {
 
         <div className="flex justify-between items-end">
 
-          {/* big hero title */}
+
           <h1 className="text-[120px] font-black text-white/90 leading-[1.05] tracking-wide">
             I DEVELOP <br />
             <span className="text-purple-500">WEBSITES</span> <br />

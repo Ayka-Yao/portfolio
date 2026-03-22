@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 
-// Same concept as Loader but accepts a text prop
-// so it can show "Projects", "About", "Contact" etc
+
 interface PageLoaderProps {
   text: string
   onComplete: () => void
@@ -13,7 +12,7 @@ const PageLoader = ({ text, onComplete }: PageLoaderProps) => {
   useEffect(() => {
     const fadeTimer = setTimeout(() => {
       setFading(true)
-    }, 800) // shorter than initial loader
+    }, 1500)
 
     const removeTimer = setTimeout(() => {
       onComplete()

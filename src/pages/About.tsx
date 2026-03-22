@@ -4,12 +4,12 @@ const About = () => {
     return (
          <section className='relative flex flex-col h-screen px-20 pt-16'>
 
-      {/* About label — top */}
+      
       <p className='text-xl tracking-[0.4em] text-white/60 text-center'>
         ABOUT
       </p>
 
-      {/* content — vertically centered, text stays left aligned */}
+      
       <div className='flex-1 flex items-center'>
         <div className='max-w-3xl mx-auto'>
 
