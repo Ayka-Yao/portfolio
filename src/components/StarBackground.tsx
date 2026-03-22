@@ -1,14 +1,14 @@
 import useStars from "../hooks/useStars"
 
-const StarBackground = () =>{
+const StarBackground = () => {
     useStars();
-    return(
+    return (
         <canvas
             id="stars"
             className="pointer-events-none fixed inset-0 -z-10"
         />
 
-        
+
     )
 }
 
