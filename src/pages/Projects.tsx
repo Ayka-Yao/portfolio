@@ -3,9 +3,8 @@ const projects = [
         title: 'Sonavi',
         description:
             'AI-driven mobile platform with IoT-enabled haptic feedback for real-time sound recognition and emergency alerts for deaf individuals.',
-        tags: ['React Native', 'IoT', 'AI', 'Research'],
+        tags: ['Kotlin', 'IoT', 'AI'],
         type: 'Research Project',
-        year: '2024',
         link: "https://github.com/xyugen/sonavi",
     },
     {
@@ -14,7 +13,6 @@ const projects = [
             'AI-powered study tool that generates smart questions from uploaded PDFs and provides personalized feedback to deepen understanding.',
         tags: ['React', 'TypeScript', 'Tailwind',],
         type: 'Web App',
-        year: '2025',
         link: "https://github.com/xyugen/clarifai",
     },
     {
@@ -23,7 +21,6 @@ const projects = [
             'Zoning certification system for the City Planning and Development Office — handles Business and Land Use certificate generation with multi-parcel support.',
         tags: ['React', 'MUI', 'Express', 'PostgreSQL'],
         type: 'Government / Internship',
-        year: '2025',
         link: null,
     },
     {
@@ -32,7 +29,6 @@ const projects = [
             'Bike ride destination finder with map integration, route planning, and location discovery for cyclists.',
         tags: ['React', 'TypeScript', 'Tailwind', 'Supabase', 'Mapbox'],
         type: 'Web App',
-        year: '2025',
         link: null,
     },
 ]
@@ -54,9 +50,7 @@ const Projects = () => {
                             <span className="text-[10px] tracking-[0.3em] text-white/35">
                                 {project.type.toUpperCase()}
                             </span>
-                            <span className="text-[10px] tracking-[0.2em] text-white/25">
-                                {project.year}
-                            </span>
+                            
                         </div>
 
                         <h2 className="text-2xl md:text-3xl font-black text-white/90 tracking-wide mb-3">
